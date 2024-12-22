@@ -4,3 +4,7 @@ prod_db/
 dev_logs/
 prod_logs/
 out/
+
+.env
+.env.dev
+.env.prod
