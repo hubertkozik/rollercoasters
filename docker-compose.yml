@@ -1,0 +1,27 @@
+services:
+    coasters-dev:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        environment:
+            - ENV=dev
+            - PORT=3050
+            - REDIS_HOST=host.docker.internal
+        ports:
+            - 3050:3050
+        volumes:
+            - ./dev_logs:/app/dev_logs
+            - ./dev_db:/app/dev_db
+    coasters-prod:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        environment:
+            - ENV=prod
+            - PORT=3051
+            - REDIS_HOST=host.docker.internal
+        ports:
+            - 3051:3051
+        volumes:
+            - ./prod_logs:/app/prod_logs
+            - ./prod_db:/app/prod_db

@@ -1,0 +1,8 @@
+dev_db/
+dev_logs/
+prod_db/
+prod_logs/
+node_modules/
+out/
+LICENSE
+README.md
