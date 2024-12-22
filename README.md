@@ -66,6 +66,16 @@ npm run build
 pnpm build
 ```
 
+### Docker
+Use Docker Compose to manage production and development environments. Ensure the `.env` files are correctly configured before executing the following command.
+
+Production Port: `3051`
+Development Port: `3050`
+
+```sh
+docker compose up
+```
+
 ## API Documentation
 
 - Ping
