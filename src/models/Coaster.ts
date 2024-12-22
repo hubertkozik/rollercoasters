@@ -9,7 +9,6 @@ import {
 	getFilePath
 } from '../utils/utilities';
 
-import type Wagon from './Wagon';
 import { WagonSchema } from './Wagon';
 
 const CoasterSchema = z
